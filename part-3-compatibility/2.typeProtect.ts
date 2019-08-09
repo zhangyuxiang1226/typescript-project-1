@@ -249,3 +249,11 @@ let con: Condition<Fish> = {
 let con2: Water = {
     name2: 'water'
 }
+
+// 条件类型的分发
+let con3:Condition<Fish|Water> = {
+    name2: ''
+}
+let con4:Condition<Fish|Water> ={
+    name3: ''
+}
