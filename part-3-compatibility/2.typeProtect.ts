@@ -251,9 +251,41 @@ let con2: Water = {
 }
 
 // 条件类型的分发
-let con3:Condition<Fish|Water> = {
+let con3: Condition<Fish | Water> = {
     name2: ''
 }
-let con4:Condition<Fish|Water> ={
+let con4: Condition<Fish | Water> = {
     name3: ''
 }
+
+// Exclude 排除
+type E = Exclude<string | number, number>;
+let e: E = ''; // 就不能是数字
+
+// Extract 提取从T类型中提取U
+type E2 = Extract<string | number | boolean, string>;
+let e2: E2 = '';
+
+// NonNullable
+type E3 = NonNullable<string | number | null | undefined>;
+let e3: E3 = '';
+
+// ReturnType
+function getUserInfo(): { name: string } {
+    return { name: 'zyx' };
+}
+type ReturnUserInfo = ReturnType<typeof getUserInfo>;
+let t: ReturnUserInfo = getUserInfo();
+
+// InstanceType
+class Person30 {
+    constructor(public name: string) {
+
+    };
+    getName() {
+        console.log(this.name);
+    }
+}
+type P = InstanceType<typeof Person>;
+let p30: P = {name: 'zyx', getName() {}};
+let p40: P = new Person30('zyx');
