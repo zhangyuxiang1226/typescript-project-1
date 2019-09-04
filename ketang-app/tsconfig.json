@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist", // 输出
+    "sourceMap": true, // 调试文件
+    "module": "commonjs", // 规范
+    "target": "es5", // 目标格式
+    "jsx": "react",
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
