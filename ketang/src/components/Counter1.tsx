@@ -6,6 +6,7 @@ interface Props {
     number: number;
     increment: any;
     decrement: any;
+    goto: any;
 }
 interface State {
     number: number;
@@ -21,12 +22,13 @@ class Counter extends React.Component<Props, State> {
     //     });
     // }
     render() {
-        let {number, increment, decrement} = this.props;
+        let {number, increment, decrement, goto} = this.props;
         return (
             <div>
-                <p>{number}</p>
+                <p>Counter1：{number}</p>
                 <button onClick={increment}>+</button>
                 <button onClick={decrement}>-</button>
+                <button onClick={goto}>跳转到 /2</button>
             </div>
         )
     }

@@ -24,7 +24,7 @@ class Counter extends React.Component<Props, State> {
         let {number, increment, decrement} = this.props;
         return (
             <div>
-                <p>{number}</p>
+                <p>Counter1：{number}</p>
                 <button onClick={increment}>+</button>
                 <button onClick={decrement}>-</button>
             </div>
