@@ -5,6 +5,8 @@
     "module": "commonjs", // 规范
     "target": "es5", // 目标格式
     "jsx": "react",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
   },
   "include": [
     "./src/**/*"

@@ -14,11 +14,9 @@ cnpm i redux react-redux @types/react-redux redux-thunk  redux-logger @types/red
 
 cnpm i connected-react-router -S
 
-## 2.配置tsconfig.js
-tsc --init
-
-## 3.webpack.config.js
-
-## package.json scripts
+## 2.目录结构
+- containers 页面组件
+- components 显示类组件
+- store 仓库
 
 

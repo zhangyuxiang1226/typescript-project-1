@@ -34,6 +34,10 @@ module.exports = {
                 enforce: 'pre',
                 test: /\.tsx?/,
                 loader: 'source-map-loader'
+            },
+            {
+                test: /\.less$/,
+                use: ["style-loader", "css-loader", "less-loader"]
             }
         ]
     },
