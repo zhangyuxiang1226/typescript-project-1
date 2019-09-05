@@ -6,7 +6,7 @@ import { Route, Link } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router'
 import history from './store/history';
 import App from './containers/App';
- 
+import './common/index.less';
 ReactDOM.render(
     <Provider store={store}>
         <ConnectedRouter history={history}>
